@@ -40,7 +40,7 @@ atom-text-editor.is-focused .selection .region {
 }
 
 .syntax--source {
-  color: #FFFFFF;
+  color: @syntax-text-color;
 }
 
 .syntax--comment {
@@ -64,20 +64,12 @@ atom-text-editor.is-focused .selection .region {
 }
 
 .syntax--source .syntax--comment.syntax--block {
-  color: #FFFFFF;
+  color: @syntax-text-color;
   background-color: #9B9B9B;
 }
 
 .syntax--string {
   color: #66CC33;
-}
-
-.syntax--string .syntax--constant.syntax--character.syntax--escape {
-  color: #AAAAAA;
-}
-
-.syntax--string.syntax--interpolated .syntax--constant.syntax--character.syntax--escape {
-  color: #555555;
 }
 
 .syntax--entity.syntax--name.syntax--type {
@@ -98,16 +90,23 @@ atom-text-editor.is-focused .selection .region {
 }
 
 .syntax--kernel.syntax--ruby {
-  color: #FFFFFF
+  color: @syntax-text-color
+}
+
+.syntax--variable.syntax--other {
+  color: @syntax-text-color
 }
 
 .wrap-guide {
   visibility: hidden;
 }
 
-atom-text-editor[data-grammar="text html erb"] {
+atom-text-editor[data-grammar="text html ruby"] {
   background-color: #434242;
    .syntax--source.syntax--ruby {
-     background-color: #000000;
+     background-color: @syntax-background-color;
+   }
+   .syntax--support.syntax--function {
+     color: @syntax-text-color;
    }
 }
