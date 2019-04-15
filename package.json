@@ -1,13 +1,13 @@
 {
   "name": "all-hallows-eve-theme",
   "theme": "syntax",
-  "version": "0.0.0",
-  "description": "A short description of your syntax theme",
+  "version": "0.0.1",
+  "description": "Original All Hallow's Eve Theme",
   "keywords": [
     "syntax",
     "theme"
   ],
-  "repository": "https://github.com/atom/all-hallows-eve-theme",
+  "repository": "https://github.com/lazaronixon/all-hallows-eve-theme",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
