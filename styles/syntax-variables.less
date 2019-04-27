@@ -5,7 +5,7 @@
 @syntax-text-color: #FFFFFF;
 @syntax-cursor-color: #FFFFFF;
 @syntax-selection-color: rgba(115, 89, 126, 0.88);
-@syntax-background-color: #191919;
+@syntax-background-color: lighten(#000000, 5%);
 
 // Guide colors
 @syntax-wrap-guide-color: #404040;
@@ -19,8 +19,8 @@
 // Gutter colors
 @syntax-gutter-text-color: #FFFFFF;
 @syntax-gutter-text-color-selected: #FFFFFF;
-@syntax-gutter-background-color: #242424;
-@syntax-gutter-background-color-selected: #191919;
+@syntax-gutter-background-color: #2C2C2C;
+@syntax-gutter-background-color-selected: @syntax-background-color;
 
 // For git diff info. i.e. in the gutter
 // These are static and were not extracted from your textmate theme
