@@ -101,9 +101,9 @@ atom-text-editor.is-focused .selection .region {
   visibility: hidden;
 }
 
-atom-text-editor[data-grammar="text html ruby"] {
+atom-text-editor[data-grammar*="html"] {
   background-color: lighten(@syntax-gutter-background-color, 10%);
-   .syntax--source.syntax--ruby {
+   .syntax--source {
      background-color: @syntax-background-color;
    }
    .syntax--support.syntax--function {
